@@ -32,13 +32,9 @@ class Student(Person):
     #
     # Write your function here
     def calculate(self):
-        grade_sum = 0
         final_grade = ""
-
-        for current in self.scores:
-            grade_sum = grade_sum + current
         
-        total = grade_sum / len(self.scores)
+        total = sum(self.scores) / len(self.scores)
 
         for key, value in self.scoretable.items():
             if total < key:
