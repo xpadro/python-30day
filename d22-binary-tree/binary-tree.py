@@ -34,23 +34,12 @@ class Solution:
         return max(left_height, right_height)
 
 
-
-
-
-
-#T=int(input())
-T = 7
+T=int(input())
 myTree=Solution()
 root=None
-'''
+
 for i in range(T):
     data=int(input())
-    root=myTree.insert(root,data)
-'''
-
-arr = [3, 5, 2, 1, 4, 6, 7]
-for i in arr:
-    data=int(i)
     root=myTree.insert(root,data)
 
 height=myTree.getHeight(root)
