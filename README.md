@@ -1,5 +1,5 @@
-# python-30day
+# python-hackerrank
 
-Code repository for exercises from HackerRank 30 days of code:
+Code repository for exercises from HackerRank:
 
-https://www.hackerrank.com/domains/tutorials/30-days-of-code
+https://www.hackerrank.com/
