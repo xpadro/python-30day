@@ -6,8 +6,10 @@ Complete the aVeryBigSum function in the editor below. It must return the sum of
 def aVeryBigSum(ar):
     return sum(ar)
 
-ar_count = int(input())
-ar = list(map(int, input().rstrip().split()))
 
-result = aVeryBigSum(ar)
-print(result)
+if __name__ == '__main__':
+    ar_count = int(input())
+    ar = list(map(int, input().rstrip().split()))
+
+    result = aVeryBigSum(ar)
+    print(result)
