@@ -1,4 +1,4 @@
-from data_structures.easy.reverse_linkedlist import reversePrint, SinglyLinkedList
+from data_structures.easy.reverse_print_linkedlist import reversePrint, SinglyLinkedList
 from utils.capture_output import capture_stdout
 
 
