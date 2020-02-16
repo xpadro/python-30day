@@ -9,3 +9,13 @@ def capture_stdout(func, args):
     
     output = temp_stdout.getvalue().strip()
     return output
+
+def build_list(node):
+    result = []
+
+    while node:
+        result.append(node.data)
+
+        node = node.next
+    
+    return result

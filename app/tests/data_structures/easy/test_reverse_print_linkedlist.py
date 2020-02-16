@@ -1,5 +1,5 @@
 from data_structures.easy.reverse_print_linkedlist import reversePrint, SinglyLinkedList
-from utils.capture_output import capture_stdout
+from utils.utils import capture_stdout
 
 
 def test_reverseList():
