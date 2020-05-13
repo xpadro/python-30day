@@ -1,6 +1,8 @@
-# python-hackerrank
+# python-algorithms
 
-Code repository for exercises from HackerRank:
+Code repository for different examples of algorithms and data structures.
+
+These examples are exercises done in several sites, like:
 
 https://www.hackerrank.com/
 
@@ -14,5 +16,5 @@ https://www.hackerrank.com/
 
 2- If not defined, add the path to the folder to PYTHONPATH (following command will append the path):
 ```
-> export PYTHONPATH="~/python-hackerrank/app"
+> export PYTHONPATH="~/python-algorithms/app"
 ```
