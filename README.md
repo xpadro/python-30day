@@ -14,7 +14,7 @@ https://www.hackerrank.com/
 > python -c "import sys; print(sys.path)"
 ```
 
-2- If not defined, add the path to the folder to PYTHONPATH (following command will append the path):
+2- If not defined, add the path to the folder to PYTHONPATH (following command will append the path. Just change the root path to your own path):
 ```
-> export PYTHONPATH="~/python-algorithms/app"
+> export PYTHONPATH="/Users/xpadro/python-algorithms/app"
 ```
