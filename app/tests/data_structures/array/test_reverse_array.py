@@ -1,4 +1,4 @@
-from data_structures.easy.arrays_ds import reverseArray
+from data_structures.array.reverse_array import reverseArray
 
 def test_reverse_array():
     assert reverseArray([3, 1, 4 ,2]) == "2 4 1 3", "Should be 2 4 1 3"

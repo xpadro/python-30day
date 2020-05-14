@@ -1,4 +1,6 @@
-""" Given an array, A, of N integers, print each element in reverse order as a single line of space-separated integers.
+""" 
+Given an array, A, of N integers, print each element in reverse order as a single line of 
+space-separated integers.
 
 Input Format
 
@@ -9,11 +11,11 @@ Output Format
 
     Print all N integers in A in reverse order as a single line of space-separated integers.
 """
-def reverseArray(a):
+def reverseArray(arr):
     result = []
 
-    for el in reversed(a):
-        result.append(el)
+    for item in reversed(arr):
+        result.append(item)
 
     return ' '.join(map(str, result))
 
@@ -21,5 +23,5 @@ if __name__ == '__main__':
     arr_count = int(input())
     arr = list(map(int, input().rstrip().split()))
 
-    res = reverseArray(arr)
-    print(res)
+    result = reverseArray(arr)
+    print(result)
