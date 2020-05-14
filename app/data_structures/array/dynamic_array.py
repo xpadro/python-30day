@@ -1,11 +1,3 @@
-#
-# Complete the 'dynamicArray' function below.
-#
-# The function is expected to return an INTEGER_ARRAY.
-# The function accepts following parameters:
-#  1. INTEGER n
-#  2. 2D_INTEGER_ARRAY queries
-#
 """
 Query: 1 x y
     - Find the sequence, seq, at index ((x XOR last_answer) % N) in seqList
@@ -16,8 +8,7 @@ Query: 2 x y
     - Find the value of element (y % seq_size) in seq and assign it to last_answer
     - Print the new value of last_answer on a new line
 """
-def dynamicArray(n, queries):
-    # Write your code here
+def dynamic_array(n, queries):
     seq = [[] for _ in range(n)]
     last_answer = 0
     result = []
@@ -49,5 +40,5 @@ if __name__ == '__main__':
     for _ in range(q):
         queries.append(list(map(int, input().rstrip().split())))
 
-    result = dynamicArray(n, queries)
+    result = dynamic_array(n, queries)
     print(result)

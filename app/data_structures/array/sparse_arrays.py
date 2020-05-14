@@ -6,7 +6,7 @@ For example, given input strings = ['ab', 'ab', 'abc'] and queries = ['ab', 'abc
 we find 2 instances of 'ab', 1 of 'abc' and 0 of 'bc'. For each query, we add an element to out return array, 
 results = [2, 1, 0]
 '''
-def matchingStrings(strings, queries):
+def matching_strings(strings, queries):
     result = []
 
     for _ in queries:
@@ -37,6 +37,6 @@ if __name__ == '__main__':
         queries_item = input()
         queries.append(queries_item)
 
-    res = matchingStrings(strings, queries)
+    res = matching_strings(strings, queries)
 
     print('\n'.join(map(str, res)))

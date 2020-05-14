@@ -11,7 +11,7 @@ Output Format
 
     Print all N integers in A in reverse order as a single line of space-separated integers.
 """
-def reverseArray(arr):
+def reverse_array(arr):
     result = []
 
     for item in reversed(arr):
@@ -23,5 +23,5 @@ if __name__ == '__main__':
     arr_count = int(input())
     arr = list(map(int, input().rstrip().split()))
 
-    result = reverseArray(arr)
+    result = reverse_array(arr)
     print(result)

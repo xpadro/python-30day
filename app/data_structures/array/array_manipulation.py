@@ -12,7 +12,7 @@ Elements 3, 4, 5 have a value of 0, since this is the difference from the previo
 
 The maximum value will be the sum of all the positive difference values.
 '''
-def arrayManipulation(n, queries):
+def array_manipulation(n, queries):
     result = []
     for _ in range(0, n):
         result.append(0)
@@ -44,6 +44,6 @@ if __name__ == '__main__':
     for _ in range(m):
         queries.append(list(map(int, input().rstrip().split())))
 
-    result = arrayManipulation(n, queries)
+    result = array_manipulation(n, queries)
 
     print(result)
