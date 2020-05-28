@@ -1,4 +1,4 @@
-from data_structures.easy.print_linkedlist import iterateItems,SinglyLinkedListNode,SinglyLinkedList
+from data_structures.linkedlist.print_linkedlist import iterateItems,SinglyLinkedListNode,SinglyLinkedList
 
 def test_iterateItems():
     llist = SinglyLinkedList()

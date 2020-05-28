@@ -1,4 +1,4 @@
-from data_structures.easy.reverse_linkedlist import reverse, SinglyLinkedList
+from data_structures.linkedlist.reverse_linkedlist import reverse, SinglyLinkedList
 from utils.utils import build_list
 
 
