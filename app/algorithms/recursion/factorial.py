@@ -1,9 +1,11 @@
+#O(n)
 def find_recursive(number):
     if number == 1:
         return number
         
     return number * find_recursive(number - 1)
 
+#O(n)
 def find_iterative(number):
     result = 1
     
