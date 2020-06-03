@@ -29,6 +29,36 @@ class BinarySearchTree:
         
         return None
 
+    def bfs(self):
+        result = []
+        queue = [self.root]
+
+        while len(queue) > 0:
+            current = queue.pop(0)
+            result.append(current.value)
+
+            if current.left is not None:
+                queue.append(current.left)
+            
+            if current.right is not None:
+                queue.append(current.right)
+        
+        return result
+    
+    def dfs(self):
+        return self.__dfs(self.root, [])
+
+    def __dfs(self, node, result):
+        if node is not None:
+            result.append(node.value)
+
+            result = self.__dfs(node.left, result)
+            result = self.__dfs(node.right, result)
+
+        return result
+
+            
+
     def __insertNode(self, toInsert, node):
         if toInsert.value < node.value:
             if node.left is None:

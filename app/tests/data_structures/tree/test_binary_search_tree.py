@@ -31,3 +31,23 @@ def test_binary_tree_lookup():
     assert tree.lookup(4) == 4, "Should have found 4"
     assert tree.lookup(15) == None, "Should have not found the value"
 
+def test_bfs():
+    tree = BinarySearchTree()
+    tree.insert(10)
+    tree.insert(8)
+    tree.insert(12)
+    tree.insert(4)
+    tree.insert(9)
+
+    assert tree.bfs() == [10, 8, 12, 4, 9]
+
+def test_dfs():
+    tree = BinarySearchTree()
+    tree.insert(10)
+    tree.insert(8)
+    tree.insert(12)
+    tree.insert(4)
+    tree.insert(9)
+
+    assert tree.dfs() == [10, 8, 4, 9, 12]
+
