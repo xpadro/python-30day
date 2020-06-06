@@ -1,5 +1,11 @@
-#O(2^n)
 def find_recursive(number):
+    """ Calculates the Fibonacci sequence number of the given position
+
+    Solution is recursive: O(2^n)
+
+    """
+
+
     if number == 0:
         return 0
     elif number == 1:
@@ -7,8 +13,14 @@ def find_recursive(number):
 
     return find_recursive(number - 1) + find_recursive(number - 2)
 
-#O(n)
 def find_iterative(number):
+    """ Calculates the Fibonacci sequence number of the given position
+
+    Solution is recursive: O(n)
+
+    """
+
+
     first = 0
     second = 1
 

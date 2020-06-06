@@ -1,6 +1,10 @@
 from math import floor
 
 def sort(arr):
+    """ Merge Sort implementation
+    
+    """
+    
     if len(arr) == 1:
         return arr
     
@@ -10,7 +14,6 @@ def sort(arr):
     right = arr[middle:]
 
     return __merge_sort(sort(left), sort(right))
-
     
 
 def __merge_sort(left, right):
@@ -28,7 +31,6 @@ def __merge_sort(left, right):
 
     return result + left[left_index:] + right[right_index:]
     
-
 
 arr = [1, 2, 3, 4, 5, 6]
 sort(arr)

@@ -1,5 +1,11 @@
-#O(n^2). When list is almost sorted: O(n)
 def sort(arr):
+    """ Insertion Sort implementation
+
+    Complexity: O(n^2)
+    When list is almost sorted: O(n)
+    
+    """
+
     length = len(arr)
 
     for i in range(length):

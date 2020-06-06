@@ -1,5 +1,11 @@
-#O(n^2)
 def sort(arr):
+    """ Bubble Sort implementation
+
+    Complexity: O(n^2)
+    
+    """
+
+
     index = len(arr)
 
     for i in range(len(arr)):

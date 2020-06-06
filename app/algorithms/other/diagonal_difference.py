@@ -1,16 +1,18 @@
-""" Given a square matrix, calculates the absolute difference between the sums of its diagonals.
+def diagonal_difference(arr):
+    """ Given a square matrix, calculates the absolute difference between the sums of its diagonals.
 
-For example, the square matrix arr is shown below:
+    For example, the square matrix arr is shown below:
 
-1 2 3
-4 5 6
-9 8 9 
+        1 2 3
+        4 5 6
+        9 8 9 
 
-Left-to-right diagonal: 1+5+9 = 15
-Right-to-left diagonal: 3+5+9 = 17
-Diagonal difference: |15 - 17| = 2
-"""
-def diagonalDifference(arr):
+    Left-to-right diagonal: 1+5+9 = 15
+    Right-to-left diagonal: 3+5+9 = 17
+    Diagonal difference: |15 - 17| = 2
+
+    """
+
     n = len(arr)
     j = n-1
     row = 0
@@ -34,5 +36,5 @@ if __name__ == '__main__':
     for _ in range(n):
         arr.append(list(map(int, input().rstrip().split())))
 
-    result = diagonalDifference(arr)
+    result = diagonal_difference(arr)
     print(result)

@@ -1,14 +1,18 @@
-""" Given an array of integers, calculates the fractions of its elements that are positive, negative, and are zeros
+def plus_minus(arr):
+    """ Given an array of integers, calculates the fractions of its elements that are positive, negative, and are zeros
 
-Print the decimal value of each fraction on a new line.
+    Output:
+        Print the decimal value of each fraction on a new line.
 
-For example, given the array arr = [1, 1, 0, -1, -1]. there are 5 elements, two positive, two negative and one zero.
-Their ratios would be:
-    2/5 = 0.4, 
-    2/5 = 0.4 and 
-    1/5 = 0.2
-"""
-def plusMinus(arr):
+    For example, given the array arr = [1, 1, 0, -1, -1]. there are 5 elements, two positive, two negative and one zero.
+    Their ratios would be:
+        2/5 = 0.4 
+        2/5 = 0.4
+        1/5 = 0.2
+
+    """
+
+
     totals = [0, 0, 0]
 
     for el in arr:
@@ -26,6 +30,6 @@ if __name__ == '__main__':
     n = int(input())
     arr = list(map(int, input().rstrip().split()))
 
-    result = plusMinus(arr)
+    result = plus_minus(arr)
     for x in result:
         print(x)

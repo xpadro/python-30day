@@ -1,5 +1,11 @@
-#O(n^2)
 def sort(arr):
+    """ Selection Sort implementation
+
+    Complexity: O(n^2)
+    
+    """
+
+
     length = len(arr)
 
     for i in range(length):
