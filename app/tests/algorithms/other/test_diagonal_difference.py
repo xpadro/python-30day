@@ -1,4 +1,4 @@
-from algorithms.easy.diagonal_difference import diagonalDifference
+from algorithms.other.diagonal_difference import diagonalDifference
 
 def test_diagonal_difference():
     assert diagonalDifference([[1, 2, 3], [4, 5, 6], [9, 8, 9]]) == 2, "Should be 2"
