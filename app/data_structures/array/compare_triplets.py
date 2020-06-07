@@ -1,14 +1,19 @@
-""" Return an array of two integers denoting the respective comparison points earned by a and b.
-
-Complete the function compareTriplets in the editor below. It must return an array of two integers, the first being 
-Alice's score and the second being Bob's.
-
-compareTriplets has the following parameter(s):
-
-    a: an array of integers representing Alice's challenge rating
-    b: an array of integers representing Bob's challenge rating
-"""
 def compare_triplets(a, b):
+    """ Given two arrays, returns an array of two positions, where each position contains the points of each array,
+    where each array gains a point every time it has a value higher than the other array.
+
+    For example,
+
+        a = [1, 4, 4, 3, 10]
+        b = [1, 3, 6, 3, 15]
+
+        result = [1, 2]
+
+        Array 'b' won in two positions (3 and 5), while array 'a' won in one position (2)
+
+    """
+
+
     points_a = 0
     points_b = 0
 

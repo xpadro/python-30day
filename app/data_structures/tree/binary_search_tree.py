@@ -5,6 +5,11 @@ class Node:
         self.right = None
 
 class BinarySearchTree:
+    """ Binary Search Tree implementation
+
+    """
+
+
     def __init__(self):
         self.root = None
     
@@ -30,6 +35,11 @@ class BinarySearchTree:
         return None
 
     def bfs(self):
+        """ Breadth-first search
+
+        """
+
+
         result = []
         queue = [self.root]
 
@@ -46,6 +56,11 @@ class BinarySearchTree:
         return result
     
     def dfs(self):
+        """ Depth-first search
+        
+        """
+
+
         return self.__dfs(self.root, [])
 
     def __dfs(self, node, result):

@@ -5,6 +5,11 @@ class DoublyLinkedListNode:
         self.previous = None
 
 class DoublyLinkedList:
+    """ Doubly Linked List implementation
+    
+    """
+
+
     def __init__(self, value):
         node = DoublyLinkedListNode(value)
         self.head = node

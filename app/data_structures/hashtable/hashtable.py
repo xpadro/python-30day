@@ -1,4 +1,8 @@
 class HashTable:
+    """ Hash table implementation
+    
+    """
+
 
     def __init__(self, size):
         self.buckets = []

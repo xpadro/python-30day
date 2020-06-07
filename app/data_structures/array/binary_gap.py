@@ -1,4 +1,14 @@
 def binary_gap(num):
+    """ Returns the maximum amount of consecutive zeros in the binary representation of 'number'
+
+    In order to count, the amount of zeros have to have a starting 1 and an ending 1:
+
+        Valid: 010001. Result = 3
+        Invalid: 01000. Result = 0
+
+    """
+
+
     binary = bin(num)[2:]
 
     max_count = 0

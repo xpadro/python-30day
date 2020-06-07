@@ -28,17 +28,13 @@ def print_singly_linked_list(node, sep):
         if node:
             print(sep, end='')
 
-# Complete the reversePrint function below.
 
-#
-# For your reference:
-#
-# SinglyLinkedListNode:
-#     int data
-#     SinglyLinkedListNode next
-#
-#
 def reversePrint(head):
+    """ Prints a Linked List in reversed order
+    
+    """
+
+
     if head is None:
         return
     

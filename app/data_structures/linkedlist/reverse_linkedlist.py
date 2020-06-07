@@ -30,17 +30,13 @@ def print_singly_linked_list(node, sep, fptr):
         if node:
             fptr.write(sep)
 
-# Complete the reverse function below.
 
-#
-# For your reference:
-#
-# SinglyLinkedListNode:
-#     int data
-#     SinglyLinkedListNode next
-#
-#
 def reverse(head):
+    """ Reverses a Linked List
+    
+    """
+
+
     result_list = SinglyLinkedList()
     return reverseList(head, result_list).head
 

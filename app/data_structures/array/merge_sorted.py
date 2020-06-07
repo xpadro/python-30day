@@ -1,7 +1,8 @@
-'''
-Given two sorted arrays, merge them in a single sorted array
-'''
 def merge_sorted(arr1, arr2):
+    """ Given two sorted arrays, merge them in a single sorted array
+    
+    """
+
     result = []
     pos_x = 0
     pos_y = 0

@@ -4,6 +4,11 @@ class LinkedListNode:
         self.next = None
 
 class LinkedList:
+    """ Linked List implementation
+    
+    """
+
+
     def __init__(self, value):
         node = LinkedListNode(value)
         self.head = node

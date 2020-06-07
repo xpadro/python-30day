@@ -1,5 +1,10 @@
 
 class Stack:
+    """ Stack backed by an array implementation
+    
+    """
+
+
     def __init__(self):
         self.array = []
         self.size = len(self.array)

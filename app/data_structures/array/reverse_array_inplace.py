@@ -1,4 +1,9 @@
 def reverse(arr):
+    """ Reverses the content of an array
+    
+    """
+
+
     start = 0
     end = len(arr) - 1
 

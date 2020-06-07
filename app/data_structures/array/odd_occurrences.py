@@ -1,4 +1,13 @@
 def find_unpaired_element(arr):
+    """ Returns the only number in the array which does not have a duplicate
+
+    For example:
+
+        [1, 2, 2, 3, 1] returns 3
+        [2, 4, 5, 2, 4, 2, 2] returns 5
+    """
+
+
     found_occurrences = {}
     
     for el in arr:

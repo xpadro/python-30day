@@ -5,6 +5,11 @@ class Node:
 
 
 class Stack:
+    """ Stack backed by a Linked List implementation
+    
+    """
+
+
     def __init__(self):
         self.top = None
         self.size = 0

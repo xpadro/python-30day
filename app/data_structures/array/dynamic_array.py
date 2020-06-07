@@ -1,14 +1,16 @@
-"""
-Query: 1 x y
-    - Find the sequence, seq, at index ((x XOR last_answer) % N) in seqList
-    - Append y to sequence seq
-
-Query: 2 x y
-    - Find the sequence, seq, at index ((x XOR last_answer) % N) in seqList
-    - Find the value of element (y % seq_size) in seq and assign it to last_answer
-    - Print the new value of last_answer on a new line
-"""
 def dynamic_array(n, queries):
+    """
+    Query: 1 x y
+        - Find the sequence 'seq' at index ((x XOR last_answer) % N) in seqList
+        - Append 'y' to sequence 'seq'
+
+    Query: 2 x y
+        - Find the sequence, seq, at index ((x XOR last_answer) % N) in seqList
+        - Find the value of element (y % seq_size) in seq and assign it to last_answer
+        - Print the new value of last_answer on a new line
+    """
+
+
     seq = [[] for _ in range(n)]
     last_answer = 0
     result = []

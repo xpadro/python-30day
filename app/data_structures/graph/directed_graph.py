@@ -1,4 +1,9 @@
 class DirectedGraph:
+    """ Directed graph implementation
+    
+    """
+
+
     def __init__(self):
         self.nodes = 0
         self.adjacent_list = {}

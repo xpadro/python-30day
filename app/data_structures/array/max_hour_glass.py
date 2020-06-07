@@ -1,14 +1,15 @@
-"""
-Given a 6x6 2D array, it returns an integer, the maximum hourglass sum in the array.
-
-We define an hourglass in a matrix arr to be a subset of values with indices falling in this pattern 
-in arr's graphical representation:
-
-a b c
-  d
-e f g
-"""
 def max_hour_glass(arr):
+    """ Given a 6x6 2D array, it returns an integer, the maximum hourglass sum in the array.
+
+    We define an hourglass in a matrix 'arr' to be a subset of values with indices falling in this pattern 
+    in arr's graphical representation:
+
+    a b c
+      d
+    e f g
+    """
+
+
     max_sum = None
 
     for y in range(4):
