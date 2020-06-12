@@ -3,6 +3,8 @@ def find_majority(arr):
 
     """
 
+    if len(arr) == 1:
+        return arr[0]
 
     target = len(arr) / 2
     values = {}
