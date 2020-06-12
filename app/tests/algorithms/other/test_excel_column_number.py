@@ -11,3 +11,4 @@ def test_resolve_column():
     assert excel.resolve("AZ") == 52
     assert excel.resolve("BA") == 53
     assert excel.resolve("ZY") == 701
+    assert excel.resolve("AAA") == 703

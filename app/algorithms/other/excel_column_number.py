@@ -28,6 +28,6 @@ class ExcelColumn:
             if i == 0:
                 result = self.chars[value.lower()]
             else:
-                result = result + (26 * i * self.chars[value.lower()])
+                result = result + ((26 ** i) * self.chars[value.lower()])
         
         return result
