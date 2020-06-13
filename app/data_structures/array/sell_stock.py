@@ -17,6 +17,8 @@ def sell(arr):
         if not buy and arr[i] > arr[i-1]:
             amount = arr[i-1]
             buy = True
+            if i == len(arr) - 1:
+                profit = profit + arr[i] - amount
         elif buy and arr[i] < arr[i-1]:
             profit = profit + arr[i-1] - amount
             buy = False
