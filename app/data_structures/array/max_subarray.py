@@ -1,4 +1,4 @@
-def max_subarray(arr):
+def max_subarray(nums):
     """ Given an integer array, find the contiguous subarray (containing at least one number) which has the 
     largest sum and return its sum.
 
@@ -11,15 +11,22 @@ def max_subarray(arr):
     """
 
 
-    max_sum = curr_sum = 0
+    if nums is None or len(nums) == 0:
+        return 0
+    elif len(nums) == 1:
+        return nums[0]
 
-    for i in range(len(arr)):
-        curr_sum = curr_sum + arr[i]
+    curr_sum = nums[0]
+    max_sum = nums[0]
+            
+    for n in range(1, len(nums)):
 
-        if curr_sum < 0:
-            curr_sum = 0
+        if curr_sum + nums[n] > nums[n]:
+            curr_sum = curr_sum + nums[n]
         else:
-            if curr_sum > max_sum:
-                max_sum = curr_sum
-    
+            curr_sum = nums[n]
+
+        if curr_sum > max_sum:
+            max_sum = curr_sum
+
     return max_sum
